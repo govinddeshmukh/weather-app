@@ -1,13 +1,75 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600&display=swap');
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Assistant', sans-serif;
+  font-weight: 900;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.box{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  color: rgb(247, 243, 237);
+}
+video{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.main{
+  position: absolute;
+  top: 30%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2rem;
+}
+
+input{
+  width: 20rem;
+  height: 2.5rem;
+  outline: 0;
+  border: 2px solid black;
+  background: transparent;
+
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  color: black;
+  font-size: 1rem;
+}
+.container{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  color: black;
+}
+.bottom{
+  margin-left: 2rem;
+  display: flex;
+}
+.bold{
+  margin: 1rem;
+}
+
+.bottom p{
+  margin: 1rem;
+}
+
+.heading{
+  position: absolute;
+  color: black;
+  top: 0;
+  left: 50%;
+  margin-top: 2rem;
+}
+
+::placeholder{
+  color: black;
+}
+
+span{
+  color: red;
 }
